@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include "fast_strtox.h"
 
 int main() {
