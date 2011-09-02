@@ -1,10 +1,6 @@
 #include <iostream>
 #include "fast_strtox.h"
 
-#undef strtof
-#undef strtod
-#undef strtol
-
 int main() {
     int i = 0;
 

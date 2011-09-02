@@ -4,9 +4,6 @@
 
 #include "fast_strtox.h"
 
-#undef strtof
-#undef strtod
-#undef strtol
 
 int main() {
     const char* const pistr  = "3.14159265358979323846264338327950288,foo";

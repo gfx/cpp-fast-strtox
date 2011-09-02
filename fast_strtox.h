@@ -12,10 +12,6 @@
 #include <climits> // for ULONG_MAX
 #include <cassert>
 
-#define strtof fast_strtof
-#define strtod fast_strtod
-#define strtol fast_strtol
-
 namespace {
     typedef unsigned char uchar_t;
     using std::pow;
