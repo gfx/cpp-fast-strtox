@@ -3,4 +3,5 @@
 *.dSYM
 *.swp
 test
+benchmark
 
