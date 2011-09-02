@@ -29,6 +29,26 @@ int main() {
         }
         std::cout << "fast_strtof(): " << t.elapsed() << std::endl;
     }
+
+    {
+        boost::timer t;
+        for(int i = 0; i < (1 * 1000 * 1000); ++i) {
+            char* tmp;
+            double f = std::strtod(pistr, &tmp);
+            (void)f;
+        }
+        std::cout << "std::strtod(): " << t.elapsed() << std::endl;
+    }
+    {
+        boost::timer t;
+        for(int i = 0; i < (1 * 1000 * 1000); ++i) {
+            char* tmp;
+            double f = fast_strtod(pistr, &tmp);
+            (void)f;
+        }
+        std::cout << "fast_strtod(): " << t.elapsed() << std::endl;
+    }
+
     {
         boost::timer t;
         for(int i = 0; i < (1 * 1000 * 1000); ++i) {
